@@ -20,14 +20,11 @@ pip install torch matplotlib
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/char-level-language-model.git
-cd char-level-language-model
+git clone https://github.com/your-username/simple_names_creator.git
+cd simple_names_creator
 ```
 
-2. Create a text file named `names.txt` in the repository directory and add your dataset of words, with one word per line.
-
-3. Run the `model.py` script:
-
+2. Run the `model.py` script:
 ```
 python model.py
 ```
