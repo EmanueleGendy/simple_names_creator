@@ -24,20 +24,27 @@ git clone https://github.com/your-username/simple_names_creator.git
 cd simple_names_creator
 ```
 
-2. Run the `model.py` script:
+2. Start the Jupyter Notebook server:
 ```
-python model.py
+jupyter notebook
 ```
+This will open the Jupyter Notebook interface in your default web browser.
 
-This will train the language model on the dataset and display the training loss curve. After training, the script will evaluate the model on the development set and generate 10 samples of text from the trained model.
+4. Navigate to the `new_names_MLP.ipynb` notebook and follow the instructions provided in the notebook to train the language model and generate text samples.
 
-## Code Structure
+## Notebook Structure
 
-- `model.py`: Contains the PyTorch implementation of the character-level language model, including data loading, model definition, training loop, and text generation.
+The `new_names_MLP.ipynb` notebook contains the following sections:
+
+- **Data Loading**: Code for loading the dataset from the `names.txt` file and preprocessing the data.
+- **Model Definition**: Implementation of the character-level language model using PyTorch.
+- **Training Loop**: Code for training the model on the dataset and visualizing the training loss.
+- **Evaluation**: Code for evaluating the model's performance on the development set.
+- **Text Generation**: Code for generating new text samples from the trained model.
 
 ## Customization
 
-You can customize various aspects of the model by modifying the code:
+You can customize various aspects of the model by modifying the code in the notebook:
 
 - **Dataset**: Change the `names.txt` file to use a different dataset of words or text.
 - **Model architecture**: Modify the model architecture by changing the dimensions of the character embedding, hidden layer, and output layer.
